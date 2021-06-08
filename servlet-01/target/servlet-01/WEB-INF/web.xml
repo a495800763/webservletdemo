@@ -10,8 +10,18 @@
         <servlet-class>com.liumq.servlet.HelloServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>errorservlet</servlet-name>
+        <servlet-class>com.liumq.servlet.ErrorServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>helloservlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>errorservlet</servlet-name>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
